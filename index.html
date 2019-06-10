@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+		<title>Home</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+		<link href="css/grid.css" type="text/css" rel="stylesheet">
+		
+		<link href='https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
+		
+</head>
+<body>
+<main>
+
+<!--------------------- header --------------------------->
+
+		<header class="container">
+	
+		<h1><a href="index.html"><img src="images/logo1.gif"></a></h1>
+	
+		<nav>
+			<div class="slide">
+			<div class="slider">
+			<script>
+			var i = 0; 			// Start Point
+			var images = [];	// Images Array
+			var time = 2000;	// Time Between Switch
+			
+			images[0] = "images/2.jpg";
+			images[1] = "images/0000.jpg";
+			images[2] = "images/000.jpg";
+			images[3] = "images/3_2.jpg";
+			images[4] = "images/3_4.jpg";
+			images[5] = "images/101.jpg";
+			
+							function changeImg(){
+								document.slide.src = images[i];
+
+									// Check If Index Is Under Max
+									if(i < images.length - 1){
+												// Add 1 to Index
+													i++; 
+									} else { 
+											// Reset Back To O
+													i = 0;
+											}
+
+							// Run function every x seconds
+							setTimeout("changeImg()", time);
+							}
+
+						// Run function when page loads
+						window.onload=changeImg;
+			
+			
+
+			</script>
+			<img name="slide" width="900px">
+			
+			</div>
+			<a class="prev"></a>
+			<a  class="next"></a>
+			</div>
+			
+			<ul class="menu">
+			<li class="current"> <a href="index.html" class="clr-1">Home</a> </li>
+			<li> <a href="about.html" class="clr-2">About The Ambanis</a> </li>
+			<li> <a href="bride.html" class="clr-3">About The bride</a> </li>
+			<li> <a href="pwc.html" class="clr-4">Pre Wedding Celeberations</a> </li>
+			<li> <a href="wd.html" class="clr-5">On the Wedding Day</a> </li> 
+			<li> <a href="reception.html" class="clr-5">Wedding  Reception</a> </li> 
+			<li> <a href="news.html" class="clr-5">News</a> </li> 
+			</ul>
+			<button type="button" class="menu-toggle" data-toggle="collapse" data-target="">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+		
+		</nav>
+	
+		</header>
+		
+		<!--------------------- content --------------------------->
+		
+		<section class="content-bg">
+		<div class="container">
+		
+			<aside class="adjust-1">
+			<div class="wrap-col">
+				
+				
+			</div>
+			</aside>
+			
+			<div class="adjust-2">
+			<div class="wrap-col">
+			
+			<div class="pad-1">
+			<h2 class="p2">A Royal Wedding</h2>
+			<p class="text-1 p3">Wednesday, December 12, 2018</p>
+<p>India has witnessed the biggest wedding of the year, and probably the most expensive one too, as Isha Ambani and Anand Piramal tie the nuptial knot at an extravagant wedding ceremony in Mumbai city. Isha Ambani is the daughter of Nita Ambani and Mukesh Ambani, the richest man in India, whose company Reliance Industries (RIL) is the biggest conglomerate in the country. Anand Piramal is the son of billionaire Ajay Piramal and Swati Piramal, who own the Piramal Group, a global business conglomerate. The celebrations for the Isha Ambani-Anand Piramal wedding went on for about four months -- with a royal engagement ceremony in Lake Como in Italy and pre-wedding bash in the City of Lakes Udaipur -- The wedding event was held at the Ambanis' residence in Antilia, where the couple got finally hitched. The 27-storey Antilla, one of the world's most expensive private residences, was all decked up to host the wedding of the year. However, the wedding celebrations were far from over, with reports suggesting the festivities went throughout the week. All the A-listers of Bollywood, including the big three Shahrukh Khan, Salman Khan and Aamir Khan, have already danced in the pre-wedding ceremony of the Isha Ambani and Anand Piramal. Pop queen Beyonce Knowles was also seen giving a powerful performance at the pre-wedding event. Not only that, some of the biggest names in the world politics, including former US first lady and secretary of state, Hillary Clinton, and former secretary of state John Kerry, also marked their presence and danced to the Bollywood tunes. And the wedding ritual, which was attended by who's who from the world of B-Town, business, and politics, could see the largest gathering of the most influential people at one place.</p>
+			</div>
+			
+			
+			
+			
+			
+			<!--------------------- footer --------------------------->
+			
+		<footer>
+				<p>&copy;2019 Manish</p>
+				<p> <a href="https://sfoly.com/" class="link">created </a> by <a href="https://sfoly.com/" class="link">Manish Kumar</a> | sfoly india</p>
+		</footer>
+	
+			</div>
+			</div>
+		
+		</div>
+		</section>
+
+</main>
+</body>
+</html>

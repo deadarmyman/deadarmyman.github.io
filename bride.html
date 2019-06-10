@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+		<title>Bride</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+		<link href="css/grid.css" type="text/css" rel="stylesheet">
+		
+		<link href='https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<main>
+
+		<!--------------------- header --------------------------->
+
+		<header class="container">
+	
+		<h1><a href="index.html"><img src="images/logo1.gif"></a></h1>
+	
+		<nav>
+			<div class="slide">
+			<div class="slider">
+			<script>
+			var i = 0; 			// Start Point
+			var images = [];	// Images Array
+			var time = 2000;	// Time Between Switch
+			
+			images[0] = "images/2.jpg";
+			images[1] = "images/0000.jpg";
+			images[2] = "images/000.jpg";
+			images[3] = "images/3_2.jpg";
+			images[4] = "images/3_4.jpg";
+			images[5] = "images/101.jpg";
+			
+							function changeImg(){
+								document.slide.src = images[i];
+
+									// Check If Index Is Under Max
+									if(i < images.length - 1){
+												// Add 1 to Index
+													i++; 
+									} else { 
+											// Reset Back To O
+													i = 0;
+											}
+
+							// Run function every x seconds
+							setTimeout("changeImg()", time);
+							}
+
+						// Run function when page loads
+						window.onload=changeImg;
+			
+			
+
+			</script>
+			<img name="slide" width="900px">
+			</div>
+			<a class="prev"></a>
+			<a class="next"></a>
+			</div>
+			
+			<ul class="menu">
+			<li class="current"> <a href="index.html" class="clr-1">Home</a> </li>
+			<li> <a href="about.html" class="clr-2">About The Ambanis</a> </li>
+			<li> <a href="bride.html" class="clr-3">About The bride</a> </li>
+			<li> <a href="pwc.html" class="clr-4">Pre Wedding Celeberations</a> </li>
+			<li> <a href="wd.html" class="clr-5">On the Wedding Day</a> </li> 
+			<li> <a href="reception.html" class="clr-5">Wedding  Reception</a> </li> 
+			<li> <a href="news.html" class="clr-5">News</a> </li> 
+			</ul>
+		
+		</nav>
+	
+		</header>
+		
+		<!--------------------- content --------------------------->
+		
+		<section class="content-bg">
+		<div class="container">
+		
+			<aside class="adjust-1">
+			<div class="wrap-col">
+			<h2 class="top-6 p6">Isha Ambani</h2>
+			<img src="images/3_3.jpg" width="290px" height="300px">
+			</div>
+			</aside>
+			
+			<div class="adjust-2">
+			<div class="wrap-col">
+			<div class="block top-5">
+			
+			<p>Isha Ambani was born on October 23, 1991. Isha is the only daughter and is often called the Indian Heiress. Isha was her grandfather Dhirubhai Ambani's favourite. It is said that he would start his day and have his morning tea only after looking at her picture. She did her schooling from Dhirubhai Ambani International School, Mumbai. After completing her schooling she got a graduate degree in Psychology and South Asian studies from Yale University. She went on to do her MBA from Stanford University. She was the member of her university soccer team and is a trained pianist. She soon started working as a business analyst with McKinsey & Company in New York after Yale. In 2008, she was ranked second on Forbes' 'Youngest Billionaire Heiresses' list. </p>
+			<p>After working a few months in McKinsey and Company, she joined her fatherâ€™s company, Reliance India Limited, as the member of the board of directors of the company. She is known as a bright child for Mukesh Ambani credited her for giving the idea of JIO internet. He said that Isha and Akash convinced him that the Internet sector is going to be the defining sector in the future. This led to the development of JIO services which brought about a massive change in which India knew technology and internet. 
+
+In 2016, Isha launched a subsidiary of the Reliance retail and named it as AJIO, which is online fashion retail. She is also the managing director of AJIO. </p>	
+				
+				<img src="images/5.jpg"  width="400px" alt="" style="border-radius:16px; display:block">
+				<p>On December 12, 2018 Isha tied the knot with Anand Piramal at the Ambani residence, Antilia. Their wedding was nothing short of a big fat royal Indian Wedding. Even a month before the wedding date, the couple managed to be in the news due to their extravagant pre-season celebrations. The pre-wedding ceremonies were held in Oberoi Udaivilas and Lake Palace in Udaipur. </p>
+				<img src="images/4.jpg"  width="400px" alt="" style="border-radius:16px; display:block">
+				
+				
+				
+				
+			</div>
+				
+				
+					
+				</div>
+				
+				
+					
+				</div>
+				
+				
+			
+			
+			<!--------------------- footer --------------------------->
+			
+			<footer>
+				<p>&copy;2019 Manish</p>
+				<p> <a href="https://sfoly.com/" class="link">created </a> by <a href="https://sfoly.com/" class="link">Manish Kumar</a> | sfoly india</p>
+		</footer>
+	
+			</div>
+			</div>
+		
+		</div>
+		</section>
+
+</main>
+</body>
+</html>
+			
+			
+			

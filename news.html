@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+		<title>News</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+		<link href="css/grid.css" type="text/css" rel="stylesheet">
+		
+		<link href='https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
+		
+</head>
+<body>
+<main>
+
+<!--------------------- header --------------------------->
+
+		<header class="container">
+	
+		<h1><a href="index.html"><img src="images/logo1.gif"></a></h1>
+	
+		<nav>
+			<div class="slide">
+			<div class="slider">
+			<script>
+			var i = 0; 			// Start Point
+			var images = [];	// Images Array
+			var time = 2000;	// Time Between Switch
+			
+			images[0] = "images/2.jpg";
+			images[1] = "images/0000.jpg";
+			images[2] = "images/000.jpg";
+			images[3] = "images/3_2.jpg";
+			images[4] = "images/3_4.jpg";
+			images[5] = "images/101.jpg";
+			
+							function changeImg(){
+								document.slide.src = images[i];
+
+									// Check If Index Is Under Max
+									if(i < images.length - 1){
+												// Add 1 to Index
+													i++; 
+									} else { 
+											// Reset Back To O
+													i = 0;
+											}
+
+							// Run function every x seconds
+							setTimeout("changeImg()", time);
+							}
+
+						// Run function when page loads
+						window.onload=changeImg;
+			
+			
+
+			</script>
+			<img name="slide" width="900px">
+			</div>
+			<a  class="prev"></a>
+			<a  class="next"></a>
+			</div>
+			
+			<ul class="menu">
+			<li class="current"> <a href="index.html" class="clr-1">Home</a> </li>
+			<li> <a href="about.html" class="clr-2">About The Ambanis</a> </li>
+			<li> <a href="bride.html" class="clr-3">About The bride</a> </li>
+			<li> <a href="pwc.html" class="clr-4">Pre Wedding Celeberations</a> </li>
+			<li> <a href="wd.html" class="clr-5">On the Wedding Day</a> </li> 
+			<li> <a href="reception.html" class="clr-5">Wedding  Reception</a> </li> 
+			<li> <a href="news.html" class="clr-5">News</a> </li> 
+			</ul>
+			<button type="button" class="menu-toggle" data-toggle="collapse" data-target="">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+		
+		</nav>
+	
+		</header>
+		
+		<!--------------------- content --------------------------->
+		
+		<section class="content-bg">
+		<div class="container">
+		
+			<aside class="adjust-1">
+			<div class="wrap-col">
+				
+				
+			</div>
+			</aside>
+			
+			<div class="adjust-2">
+			<div class="wrap-col">
+			
+			<div class="pad-1">
+			<h2 class="p2">In the News</h2>
+			
+<p>Media reports say that the guest list of the extravaganza at Udaipur was to be of around 2,000 but the wedding guest list included around 600 people who were mostly close family relatives. According to media reports, the wedding invitation itself included necklaces and precious stones stacked in a two-tier floral box, costing a whopping Rs. 3,00,000 each. According to Press Trust of India , approximately $100 million have been spent on the wedding in total and it is one of India's biggest wedding, however there has been no confirmation on the amount from either of the families.
+</p>
+<br><img src="images/79.jpg"  width="500px" alt="" style="border-radius:16px; display:block"></br >
+Isha Ambani Piramal is indeed an unconventional Indian Heiress and her wedding was thus a majestic affair. From living the idle academic life to having the wedding of the year, Isha is truly a princess in a fairy tale most can only dream of which makes her a very fortunate woman.
+			</div>
+			
+			
+			
+			
+			
+			<!--------------------- footer --------------------------->
+			
+		<footer>
+				<p>&copy;2019 Manish</p>
+				<p> <a href="https://sfoly.com/" class="link">created </a> by <a href="https://sfoly.com/" class="link">Manish Kumar</a> | sfoly india</p>
+		</footer>
+	
+			</div>
+			</div>
+		
+		</div>
+		</section>
+
+</main>
+</body>
+</html>
